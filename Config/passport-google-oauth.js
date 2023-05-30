@@ -6,7 +6,7 @@ const db = require('../Config/mysql');
 passport.use(new GoogleStrategy({
     clientID: '784411793503-i72m5fgj3tt3gqo6acrgrvbgm45l8e17.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: "http://localhost:8000/google/callback",
+    callbackURL: "https://boraseclasses.tech/google/callback",
     },
     function(accessToken, refreshToken, profile, done){
         // find a user
